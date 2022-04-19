@@ -50,7 +50,7 @@ def main():
 if __name__ == '__main__':
     st.title("Streamlit web app")
     html_temp = """
-    <div style="background-color:tomato;padding:10px">
+    <div style="background-color:blue;padding:10px">
     <h2 style="color:white;text-align:center;">Time Log Parser App </h2>
     </div>
     """
