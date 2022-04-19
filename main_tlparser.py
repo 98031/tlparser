@@ -1,6 +1,7 @@
 import sys
 import re
 import streamlit as st
+import base64
 
 
 def main():
@@ -49,19 +50,19 @@ def main():
 
 if __name__ == '__main__':
     st.title("Streamlit web app")
+    main_bg = "tl_parser.jpg"
+    main_bg_ext = "jpg"
     st.markdown(
-    """
+    f"""
     <style>
-    .reportview-container {
-        background: url(https://unsplash.com/photos/MG8c-4n1QVE)
-    }
-   .sidebar .sidebar-content {
-        background: url(https://unsplash.com/photos/MG8c-4n1QVE)
-    }
+    .reportview-container {{
+        background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
+    }}
     </style>
     """,
     unsafe_allow_html=True
-)
+    )
+    new_title = '<p style="font-family:sans-serif; color:white; font-size: 20px;">@streamlit</p>'
     primaryColor="#d33682"
     backgroundColor="#002b36"
     secondaryBackgroundColor="#586e75"
