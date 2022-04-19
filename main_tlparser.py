@@ -1,6 +1,7 @@
 import sys
 import re
 import streamlit as st
+import random
 import base64
 
 
@@ -9,7 +10,7 @@ def main():
     file = st.file_uploader(" Upload the TimeLog file here")
     if st.button("Generate"):
         lst = ['3hrs 05 minutes','6hrs 17 minutes', '4hrs 54 minutes']
-        val = np.random.choice(lst)
+        val = random.choice(lst)
         lines = str(file.read(),"utf-8")
 
         workTime = re.compile(r'((\d{0,1})\d:\d\d)(am|pm)( )*-( )*((\d{0,1})\d:\d\d)(am|pm)')
