@@ -49,6 +49,19 @@ def main():
 
 if __name__ == '__main__':
     st.title("Streamlit web app")
+    st.markdown(
+    """
+    <style>
+    .reportview-container {
+        background: url("https://unsplash.com/photos/MG8c-4n1QVE")
+    }
+   .sidebar .sidebar-content {
+        background: url("https://unsplash.com/photos/MG8c-4n1QVE")
+    }
+    </style>
+    """,
+    unsafe_allow_html=True
+)
     primaryColor="#d33682"
     backgroundColor="#002b36"
     secondaryBackgroundColor="#586e75"
