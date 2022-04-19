@@ -53,10 +53,10 @@ if __name__ == '__main__':
     """
     <style>
     .reportview-container {
-        background: url("https://unsplash.com/photos/MG8c-4n1QVE")
+        background: url(https://unsplash.com/photos/MG8c-4n1QVE)
     }
    .sidebar .sidebar-content {
-        background: url("https://unsplash.com/photos/MG8c-4n1QVE")
+        background: url(https://unsplash.com/photos/MG8c-4n1QVE)
     }
     </style>
     """,
