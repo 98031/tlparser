@@ -49,18 +49,6 @@ def main():
 
 if __name__ == '__main__':
     st.title("Streamlit web app")
-#     main_bg = "tl_parser.jpg"
-#     main_bg_ext = "jpg"
-#     st.markdown(
-#     f"""
-#     <style>
-#     .reportview-container {{
-#         background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
-#     }}
-#     </style>
-#     """,
-#     unsafe_allow_html=True
-#     )
     primaryColor="#d33682"
     backgroundColor="#002b36"
     secondaryBackgroundColor="#586e75"
